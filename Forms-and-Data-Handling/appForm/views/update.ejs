@@ -1,0 +1,7 @@
+<!-- views/update.ejs -->
+<%- include("partials/errors.ejs") %>
+<form action="/users/<%= user.id %>/update" method="POST">
+  <input type="text" name="firstName" value="<%= user.firstName %>" required>
+  <input type="text" name="lastName" value="<%= user.lastName %>" required>
+  <button type="submit">Update User</button>
+</form>
