@@ -5,9 +5,7 @@ it is important to properly escape data before displaying it in HTML.
 
 ## What is XSS ?
 
-`cross-site Scripting (XSS)` is a security vulnerability that allows an
-attacker to inject malicious `scripts` into a web pages viewed by other 
-users.
+`cross-site Scripting (XSS)` is a security vulnerability that allows an attacker to inject malicious `scripts` into a web pages viewed by other users.
 
 ### Example 
 
@@ -39,7 +37,7 @@ rendered output without escaping
 
 ### Escaping in EJS
 
-EJS use `<%= %>` to escape user input this ensures special characters are
+EJS use `<%= %>` to escape user inputs. this ensures special characters are
 displayed as plain text rather than interpreted as HTML or Javascript.
 
 rendered output with escaping 
