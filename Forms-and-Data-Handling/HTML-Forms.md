@@ -11,7 +11,7 @@ simple html form
 
 ```
 
-it this form the `name` attribute plays a key role. it defines how
+in this form the `name` attribute plays a key role. it defines how
 our input will be identified in the form data sent to our server.
 
 The `type="submit"` button then allows the user to upload the entered data to the server.
