@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Express app listening on port ${PORT}!`));
+app.listen(PORT, () => console.log(`Express app is running on port ${PORT}!`));
 
 // Most simple for will use the `Content-Type: application/x-www-form-urlencoded`
 
