@@ -5,7 +5,7 @@ const PORT = 4000;
 
 app.use((req, res, next) => {
     const timeOfRequest = new Date()
-    console.log('Time:', timeOfRequest , "resource: ", req.url);
+    console.log('Time:', timeOfRequest , req.method , req.url , );
 
     next();
 });
