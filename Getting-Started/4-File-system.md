@@ -1,6 +1,6 @@
 # File system
 
-the fs module provides a way to interact with files both asynchronously an synchronously. it can be used simply by requiring it 
+the fs module provides a way to interact with files both asynchronously and synchronously. it can be used simply by requiring it 
 
 ```js
 
