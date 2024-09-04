@@ -53,8 +53,11 @@ establishing a relationship between the tables.
 
 ### Advantages of Relational Databases
 `Data Integrity`: Enforces data accuracy and consistency through constraints.
+
 `Flexibility`: Supports complex queries and data manipulation.
+
 `Scalability`: Handles large volumes of data with proper indexing and optimization.
+
 `Normalization`: Reduces data redundancy by organizing data into separate tables.
 
 ## SQL (Structured Query Language)
@@ -93,7 +96,8 @@ SELECT FirstName, LastName FROM Employees WHERE
 INSERT INTO Employees (EmployeeID, FirstName, LastName, Department) 
 VALUES (1, 'John', 'Doe', 'Marketing'); 
 
-UPDATE Employees SET Department = 'Sales' WHERE EmployeeID = 1; DELETE FROM Employees WHERE EmployeeID = 1; 
+UPDATE Employees SET Department = 'Sales' WHERE EmployeeID = 1;
+DELETE FROM Employees WHERE EmployeeID = 1; 
 ```
 
 ### Data Control Language (DCL):
