@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+</head>
+<body>
+    <h1>Usernames</h1>
+    <ul>
+        <% users.forEach(user => { %>
+            <li>
+                <%= user.username %>
+                <form action="/update/<%= user.id %>" method="POST" style="display:inline;">
+                    <input type="text" name="username" value="<%= user.username %>">
+                    <button type="submit">Update</button>
+                </form>
+                <form action="/delete/<%= user.id %>" method="POST" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+
+    <h2>Add a New User</h2>
+    <form action="/add" method="POST">
+        <input type="text" name="username" placeholder="Username">
+        <button type="submit">Add User</button>
+    </form>
+</body>
+</html>
