@@ -4,9 +4,10 @@ const getUserProfile = (req, res)=>{
     const userProfile = {
         id: userId,
         name: 'John Doe',
-        email: 'john@example.com'
+        email: 'john@example.com',
+        level: '2'
     };
-    res.status(200).json(userProfile)
+    res.json(userProfile)
 }
 
 module.exports = {
