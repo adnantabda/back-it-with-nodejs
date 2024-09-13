@@ -1,10 +1,11 @@
-const {Pool} = require("pg");
-const { database } = require("pg/lib/defaults");
+const { Pool } = require("pg");
 
-
-module.exports = new Pool ({
-    host: "localhost",
-    user: "<role_name>",
-    database:"top_users",
-    port: 5432
-})
+// All of the following properties should be read from environment variables
+// We're hardcoding them here for simplicity
+module.exports = new Pool({
+  host: "localhost", // or wherever the db is hosted
+  user: "<role_name>",
+  database: "top_users",
+  password: "<role_password>",
+  port: 5432 // The default port
+});
