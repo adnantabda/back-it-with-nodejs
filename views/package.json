@@ -1,0 +1,16 @@
+{
+  "name": "views",
+  "version": "1.0.0",
+  "description": "views are user-facing part of our application it is what our users see and interact with.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
