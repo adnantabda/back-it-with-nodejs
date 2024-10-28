@@ -72,3 +72,29 @@ const messages = await prisma.message.findMany();
 
 it is a tool that helps to perform database migrations. 
 the changes are tracked in a migrations folder in codebase
+
+## Over view 
+
+prisma schema: allows developers to define their application models in an intuitive data modeling language it also contains a connection to the database and defines a generator
+
+in schema we configure three things.
+
+1. Data source : specifies our database connection
+            - provider : the database we are using
+            - url      : the location of of the database 
+2. generator : indicates that we want to generate prisma client 
+
+3. Data Model : defines our applications model
+
+Functions of prisma schema data models
+
+- Represent a table in relational databases
+- Provide the foundation for the queries in the prisma client api
+
+## Getting a data model
+
+There are two major workflows for "getting" a data model into your Prisma schema:
+
+- Manually writing the data model and mapping it to the database with Prisma Migrate
+-  Generating the data model by introspecting a database
+
