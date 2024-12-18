@@ -1,12 +1,10 @@
 For any Project file organizing effectively is crucial for scalability and maintainability. 
 
 # Flow
-
 Client Request ---> app.js (Middleware applied) ---> Routes ---> Middleware ---> Controller ---> Model ---> Database Query ---> Controller Sends Response ---> Client Receives Response
 
 main job of controller => Handling Business Logic 
-main job of middleware => Request Parsing, Authentication, Validation 
-
+main job of middleware => Request Parsing, Authentication, Validation
 
 1. Client Request
     GET /api/users
